@@ -1,6 +1,6 @@
 # Python-Assignment
 
-As the board entries need to be traversed, we came up with two ways to the problem. The code for both of these techniques is added as.py files.
+As the board entries need to be traversed, I came up with two ways to the problem. The code for both of these techniques is added as.py files.
 
 - Breadth First Search
 - Depth First Search
