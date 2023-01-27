@@ -29,8 +29,8 @@ def solve( board):
   for i in range(m):
     for j in range(n):
       if board[i][j] == '$':
-        board[i][j] = 'O'
-      else:
+        board[i][j] = 'O'                                                               #time complexity - O(m*n)
+      else:                                                                             #space complexity - O(m*n)
         board[i][j] = 'X'
 
 board = [["X","X","X","X"],["X","O","O","X"],["X","X","O","X"],["X","O","X","X"]]
