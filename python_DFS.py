@@ -16,8 +16,8 @@ def solve(board):
             dfs(i,0)    # Traversing [0][0] to [m-1][0] and [0][n-1] to [m-1][n-1]
         if board[i][n-1] == 'O':
             dfs(i, n-1)
-    for j in range(n):
-        if board[0][j] == 'O':
+    for j in range(n):                                                      #time complexity - O(m*n)
+        if board[0][j] == 'O':                                              #space complexity - O(m*n)(stack space)
           dfs(0, j)         # Traversing [m-1][0] to [m-1][n-1] and [0][0] #to [0][n-1]
         if board[m-1][j] == 'O':
           dfs(m-1, j)
