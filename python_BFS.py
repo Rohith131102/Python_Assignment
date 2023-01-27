@@ -7,7 +7,6 @@ def solve( board):
   dy = (0,1,0,-1) #to move in y direction
 # Traversing the borders and storing the cells with entry 'O' in queue
   for i in range(m):
-    
     if board[i][0] == 'O':
       q.append((i, 0))         # Traversing [0][0] to [m-1][0] and [0][n-1] to [m-1][n-1]
     if board[i][n-1] == 'O':
@@ -35,13 +34,13 @@ def solve( board):
         board[i][j] = 'X'
 
 board = [["X","X","X","X"],["X","O","O","X"],["X","X","O","X"],["X","O","X","X"]]
-print("Board before captures - ")
+print("Board before - ")
 for i in board:
   for j in i:
     print(j,end = " ")
   print()
 solve(board)
-print("Board after captures - ")
+print("Board after changes - ")
 for i in board:
   for j in i:
     print(j,end = " ")
